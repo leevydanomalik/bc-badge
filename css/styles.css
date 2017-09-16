@@ -27,7 +27,7 @@ body {
     height: var(--badge-height);
     background-color: white;
     border-radius: var(--badge-border-radius);
-    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.54);
-    -moz-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.54);
-    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.54);
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
 }
