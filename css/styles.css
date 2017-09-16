@@ -1,0 +1,33 @@
+@import url("id-card.css");
+
+@font-face {
+    font-family: franklin-gothic;
+    src: url(../asset/franklin-gothic/framd.ttf);
+}
+
+:root {
+    --badge-width: 300px;
+    --badge-height: calc(1.5 * var(--badge-width));
+    --badge-border-radius: 8px;
+    --badge-padding: 8px;
+    --berau-black: black;
+    --berau-green: #8BC34A;
+    --berau-blue: #2196F3;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.badge {
+    display: block;
+    position: relative;
+    width: var(--badge-width);
+    height: var(--badge-height);
+    background-color: white;
+    border-radius: var(--badge-border-radius);
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.54);
+    -moz-box-shadow: 0 1px 6px 0 rgba(0,0,0,0.54);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.54);
+}

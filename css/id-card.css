@@ -1,0 +1,107 @@
+/*Header Part*/
+.badge--id > .badge__header {
+    position: relative;
+    height: calc(.2 * var(--badge-height));
+    border-top-left-radius: var(--badge-border-radius);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+/*Company Logo*/
+.badge--id .header__company {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--berau-black);
+    border-top-left-radius: var(--badge-border-radius);
+}
+
+.badge--id .header__company > img {
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    padding: 12.5% 0;
+}
+
+/*Card Type*/
+.badge--id .header__type {
+    display: inline-block;
+    width: 40%;
+}
+
+.badge--id .type__title {
+    background-color: var(--berau-green);
+    border-top-right-radius: var(--badge-border-radius);
+    height: calc(.1 * var(--badge-height));
+}
+
+.badge--id .type__title > p {
+    width: 100%;
+    height: calc(.1 * var(--badge-height));
+    line-height: calc(.1 * var(--badge-height));
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.badge--id .type__subtitle {
+    background-color: var(--berau-blue);
+    height: calc(.1 * var(--badge-height));
+}
+
+.badge--id .type__subtitle > p {
+    width: 100%;
+    height: calc(.1 * var(--badge-height));
+    line-height: calc(.1 * var(--badge-height));
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+/*Body Part*/
+.badge--id > .badge__body {
+    position: relative;
+    height: 60%;
+    background-color: #FAFAFA;
+}
+
+/*Footer Part*/
+.badge--id > .badge__footer {
+    position: relative;
+    height: calc((.2 * var(--badge-height)) - (4 * var(--badge-padding)));
+    padding: calc(2 * var(--badge-padding));
+    background-color: var(--berau-black);
+    border-bottom-left-radius: var(--badge-border-radius);
+    border-bottom-right-radius: var(--badge-border-radius);
+}
+
+.user_name {
+    margin: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.user_label {
+    margin: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.website {
+    position: absolute;
+    right: var(--badge-padding);
+    bottom: var(--badge-padding);
+    margin: 0;
+    font-size: 12px;
+    color: var(--berau-green);
+}
