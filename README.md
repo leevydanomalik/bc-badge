@@ -15,6 +15,9 @@ This repository is used to keep the Berau Coal's ID card preview. There are seve
 * `/css` - css files, separated into different css files for each type.
 * `index.html` - preview of ID Card.
 
+# Live Demo
+View live demo here: [https://yacobwijaya.github.io/bc-badge/](https://yacobwijaya.github.io/bc-badge/)
+
 # Badges
 ## ID Card
 ### Code
