@@ -60,6 +60,23 @@
     height: calc(var(--id-card-header-height) / 2);
 }
 
+.badge--id .type__subtitle.type__subtitle--employee {
+    background-color: var(--berau-blue);
+}
+
+.badge--id .type__subtitle.type__subtitle--contractor {
+    background-color: var(--berau-red);
+}
+
+.badge--id .type__subtitle.type__subtitle--subcontractor {
+    background-color: var(--berau-yellow);
+    color: black;
+}
+
+.badge--id .type__subtitle.type__subtitle--study {
+    background-color: var(--berau-orange);
+}
+
 .badge--id .type__subtitle > p {
     width: 100%;
     height:  calc(var(--id-card-header-height) / 2);
@@ -67,7 +84,7 @@
     text-align: center;
     margin: auto;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     color: white;
 }

@@ -1,0 +1,181 @@
+:root {
+    --simper-card-header-height: calc(.2 * var(--badge-height));
+    --simper-card-footer-height: calc(.55 * var(--badge-height));
+    --simper-card-body-height: calc(.25 * var(--badge-height));
+}
+
+/*Header Part*/
+.badge--simper > .badge__header {
+    position: relative;
+    height: var(--simper-card-header-height);
+    border-top-left-radius: var(--badge-border-radius);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+/*Company Logo*/
+.badge--simper .header__company {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--berau-black);
+    border-top-left-radius: var(--badge-border-radius);
+}
+
+.badge--simper .header__company > img {
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    padding: 12.5% 0;
+}
+
+/*Card Type*/
+.badge--simper .header__type {
+    display: inline-block;
+    width: 40%;
+}
+
+.badge--simper .type__title {
+    background-color: var(--berau-green);
+    border-top-right-radius: var(--badge-border-radius);
+    height: calc(var(--id-card-header-height) / 2);
+}
+
+.badge--simper .type__title > p {
+    width: 100%;
+    height: calc(var(--id-card-header-height) / 2);
+    line-height: calc(var(--id-card-header-height) / 2);
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.badge--simper .type__subtitle {
+    background-color: var(--berau-blue);
+    height: calc(var(--id-card-header-height) / 2);
+}
+
+.badge--simper .type__subtitle.type__subtitle--employee {
+    background-color: var(--berau-blue);
+}
+
+.badge--simper .type__subtitle.type__subtitle--contractor {
+    background-color: var(--berau-yellow);
+}
+
+.badge--simper .type__subtitle > p {
+    width: 100%;
+    height:  calc(var(--id-card-header-height) / 2);
+    line-height:  calc(var(--id-card-header-height) / 2);
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+}
+
+/*Body Part*/
+.badge--simper > .badge__body {
+    position: relative;
+    height: var(--simper-card-body-height);
+    background-color: white;
+}
+
+.badge--simper .simper__general {
+    margin: 0;
+    padding: var(--badge-padding);
+    border-spacing: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+/*Footer Part*/
+.badge--simper > .badge__footer {
+    position: relative;
+    height: var(--simper-card-footer-height);
+    padding: 0;
+    background-color: white;
+    border-bottom-left-radius: var(--badge-border-radius);
+    border-bottom-right-radius: var(--badge-border-radius);
+}
+
+.badge--simper .simper__permit {
+    padding: var(--badge-padding);
+    text-align: center;
+}
+
+.badge--simper .simper__permit.simper__permit--employee {
+    background: var(--berau-green);
+}
+
+.badge--simper .simper__permit.simper__permit--contractor {
+    background: var(--berau-yellow);
+    color: black;
+}
+
+.badge--simper .simper__permit > p {
+    margin: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+}
+
+.badge--simper .simper__matrix-1 {
+    border-spacing: 0;
+    padding: var(--badge-padding);
+    width: 100%;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.badge--simper .simper__matrix-1 td {
+    border: 1px solid var(--badge-line);
+}
+
+.badge--simper .simper__matrix-1 td.head {
+    background: var(--berau-green);
+    color: white;
+}
+
+.badge--simper .simper__matrix-1 td.signature {
+    vertical-align: bottom;
+    height: 48px;
+}
+
+.badge--simper .simper__picture {
+    width: 75px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.badge--simper .simper__penalty {
+    border-spacing: 0;
+    padding: 0 var(--badge-padding);
+    width: 50%;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.badge--simper .simper__penalty td.head {
+    border: none;
+}
+
+.badge--simper .simper__penalty td {
+    border: 1px solid var(--badge-line);
+}
+
+.badge--simper .website {
+    position: absolute;
+    right: var(--badge-padding);
+    bottom: var(--badge-padding);
+    margin: 0;
+    font-size: 12px;
+    color: black;
+}

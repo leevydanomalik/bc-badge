@@ -2,6 +2,7 @@
 @import url("guest-card.css");
 @import url("lc-card.css");
 @import url("dm-card.css");
+@import url("simper-card.css");
 
 @font-face {
     font-family: franklin-gothic;
@@ -13,6 +14,7 @@
     --badge-height: calc(1.5 * var(--badge-width));
     --badge-border-radius: 8px;
     --badge-padding: 8px;
+    --badge-line: #424242;
     --berau-black: black;
     --berau-green: #8BC34A;
     --berau-blue: #2196F3;
