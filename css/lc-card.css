@@ -99,7 +99,7 @@
     border-bottom-right-radius: var(--badge-border-radius);
 }
 
-.badge--lc .remarks {
+.badge--lc .lc__general {
     margin: 0;
     border-spacing: 0;
     font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;

@@ -1,0 +1,103 @@
+:root {
+    --tac-card-header-height: calc(.2 * var(--badge-height));
+    --tac-card-footer-height: calc(.3 * var(--badge-height));
+    --tac-card-body-height: calc(.5 * var(--badge-height));
+}
+
+/*Header Part*/
+.badge--tac > .badge__header {
+    position: relative;
+    height: var(--tac-card-header-height);
+    border-top-left-radius: var(--badge-border-radius);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+/*Company Logo*/
+.badge--tac .header__company {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background-color: #0277BD;
+    border-top-left-radius: var(--badge-border-radius);
+}
+
+.badge--tac .header__company > img {
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    padding: 12.5% 0;
+}
+
+.badge--tac .header__ministry {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    background-color: #0277BD;
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+.badge--tac .header__ministry > img {
+    height: 80%;
+    width: auto;
+    padding: 7.5% 0;
+}
+
+/*Body Part*/
+.badge--tac > .badge__body {
+    position: relative;
+    height: var(--tac-card-body-height);
+    background-color: #01579B;
+}
+
+.badge--tac .tac__title {
+    position: relative;
+    padding: var(--badge-padding);
+    margin: 0;
+    text-align: center;
+    background-color: #0277BD;
+}
+
+.badge--tac .tac__title > p {
+    margin: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.badge--tac .tac__picture {
+    position: absolute;
+    top: 87.5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -87.5%);
+    -moz-transform: translate(-50%, -87.5%);
+    -ms-transform: translate(-50%, -87.5%);
+    -o-transform: translate(-50%, -87.5%);
+    transform: translate(-50%, -87.5%);
+    height: calc(.5 * var(--lc-card-body-height));
+    width: calc(.375 * var(--lc-card-body-height));
+    object-fit: cover;
+}
+
+/*Footer Part*/
+.badge--tac > .badge__footer {
+    position: relative;
+    height: calc(var(--tac-card-footer-height) - (4 * var(--badge-padding)));
+    padding: calc(2 * var(--badge-padding));
+    background-color: #0277BD;
+    border-bottom-left-radius: var(--badge-border-radius);
+    border-bottom-right-radius: var(--badge-border-radius);
+}
+
+.badge--tac .tac__general {
+    margin: 0;
+    border-spacing: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 12px;
+    color: white;
+}

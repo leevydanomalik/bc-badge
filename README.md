@@ -261,7 +261,7 @@ View live demo here: [https://yacobwijaya.github.io/bc-badge/](https://yacobwija
     </div>
 </div>
 ```
-## Kimper
+## Kimper Card
 ### Code
 ```html
 <div class="badge badge--kimper">
@@ -308,6 +308,60 @@ View live demo here: [https://yacobwijaya.github.io/bc-badge/](https://yacobwija
                 <td>Valid</td>
                 <td>:</td>
                 <td>{{Valid}}</td> ** Replace with validity period.
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+```
+## Transhipment Access Card
+### Code
+```html
+<div class="badge badge--tac">
+    <div class="badge__header">
+        <div class="header__company">
+            <img src="asset/berau-logo.svg"> ** Replace with company logo.
+        </div>
+        <div class="header__ministry">
+            <img src="asset/dishub-logo.svg"> ** Replace with ministry logo.
+        </div>
+    </div>
+    <div class="badge__body">
+        <div class="tac__title"> ** Replace with license information.
+            <p>TRANSHIPMENT ACCESS CARD</p>
+            <p>PT. Berau Coal - Muara Pantai</p>
+            <p>ISPS Code</p>
+        </div>
+        <img class="tac__picture" src="http://www.saparch.com/public/widget/1_widget_john-doe.png">
+        ** Replace with user picture.
+    </div>
+    <div class="badge__footer">
+        <table class="tac__general">
+            <tbody>
+            <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td>{{Name}}</td> ** Replace with user name.
+            </tr>
+            <tr>
+                <td>Rank</td>
+                <td>:</td>
+                <td>{{Rank}}</td> ** Replace with user rank.
+            </tr>
+            <tr>
+                <td>No TAC / Reg</td>
+                <td>:</td>
+                <td>{{No TAC}}</td> ** Replace with TAC number.
+            </tr>
+            <tr>
+                <td>Company</td>
+                <td>:</td>
+                <td>{{Company}}</td> ** Replace with company name.
+            </tr>
+            <tr>
+                <td>Valid Until</td>
+                <td>:</td>
+                <td>{{Valid Until}}</td> ** Replace with validity period.
             </tr>
             </tbody>
         </table>
