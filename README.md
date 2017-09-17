@@ -170,3 +170,91 @@ This repository is used to keep the Berau Coal's ID card preview. There are seve
     </div>
 </div>
 ```
+## Simper Card
+### Code
+```html
+<div class="badge badge--simper">
+    <div class="badge__header">
+        <div class="header__company">
+            <img src="asset/berau-logo.svg">
+        </div>
+        <div class="header__type">
+            <div class="type__title">
+                <p>SIMPER</p>
+            </div>
+            <div class="type__subtitle type__subtitle--contractor"> ** Replace class with proper type.
+                <p>COMPANY LICENSE</p> ** Replace with type.
+            </div>
+        </div>
+    </div>
+    <div class="badge__body">
+        <table class="simper__general">
+            <tbody>
+            <tr>
+                <td>No Reg</td>
+                <td>:</td>
+                <td>{{No Reg}}</td> ** Replace with registry number.
+            </tr>
+            <tr>
+                <td>NPK</td>
+                <td>:</td>
+                <td>{{NPK}}</td> ** Replace with NPK.
+            </tr>
+            <tr>
+                <td>Perusahaan</td>
+                <td>:</td>
+                <td>{{Perusahaan}}</td> ** Replace with company.
+            </tr>
+            <tr>
+                <td>Masa Berlaku</td>
+                <td>:</td>
+                <td>{{Masa Berlaku}}</td> ** Replace with validity period.
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="badge__footer">
+        <div class="simper__permit simper__permit--contractor"> ** Replace with proper color.
+            <p>Full Permit / Non Full Permit</p>
+        </div>
+        <table class="simper__matrix-1">
+            <tr>
+                <td rowspan="5">
+                    <img class="simper__picture" src="http://www.saparch.com/public/widget/1_widget_john-doe.png">
+                    ** Replace with user image.
+                </td>
+                <td colspan="4" class="head">Golongan SIM Polisi</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>BI</td>
+                <td>BII</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="head">Golongan Darah</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>O</td>
+                <td>AB</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="signature">Tanda Tangan</td>
+            </tr>
+        </table>
+        <table class="simper__penalty">
+            <tr>
+                <td colspan="3" class="head">Pelanggaran</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <p class="website">www.beraucoal.co.id</p>
+    </div>
+</div>
+```
