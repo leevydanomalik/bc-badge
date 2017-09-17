@@ -79,6 +79,21 @@
     background-color: #FAFAFA;
 }
 
+/*Picture*/
+.badge--id .user__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: calc(.8 * var(--id-card-body-height));
+    width: calc(.6 * var(--id-card-body-height));
+    object-fit: cover;
+}
+
 /*Footer Part*/
 .badge--id > .badge__footer {
     position: relative;
@@ -89,7 +104,8 @@
     border-bottom-right-radius: var(--badge-border-radius);
 }
 
-.badge--id .user_name {
+/*User Info*/
+.badge--id .user__name {
     margin: 0;
     font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
     font-size: 20px;
@@ -97,7 +113,7 @@
     color: white;
 }
 
-.badge--id .user_label {
+.badge--id .user__label {
     margin: 0;
     font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
     font-size: 16px;

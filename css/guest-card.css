@@ -1,13 +1,13 @@
 :root {
-    --id-card-header-height: calc(.2 * var(--badge-height));
-    --id-card-footer-height: calc(.25 * var(--badge-height));
-    --id-card-body-height: calc(.55 * var(--badge-height));
+    --guest-card-header-height: calc(.2 * var(--badge-height));
+    --guest-card-footer-height: calc(.25 * var(--badge-height));
+    --guest-card-body-height: calc(.55 * var(--badge-height));
 }
 
 /*Header Part*/
 .badge--guest > .badge__header {
     position: relative;
-    height: var(--id-card-header-height);
+    height: var(--guest-card-header-height);
     border-top-left-radius: var(--badge-border-radius);
     border-top-right-radius: var(--badge-border-radius);
 }
@@ -58,7 +58,7 @@
 /*Body Part*/
 .badge--guest > .badge__body {
     position: relative;
-    height: var(--id-card-body-height);
+    height: var(--guest-card-body-height);
     background-color: #FAFAFA;
 }
 
@@ -100,7 +100,7 @@
 /*Footer Part*/
 .badge--guest > .badge__footer {
     position: relative;
-    height: calc(var(--id-card-footer-height) - (4 * var(--badge-padding)));
+    height: calc(var(--guest-card-footer-height) - (4 * var(--badge-padding)));
     padding: calc(2 * var(--badge-padding)) 0;
     background-color: var(--berau-black);
     border-bottom-left-radius: var(--badge-border-radius);
