@@ -73,16 +73,16 @@ This repository is used to keep the Berau Coal's ID card preview. There are seve
 <div class="badge badge--lc">
     <div class="badge__header">
         <div class="header__company">
-            <img src="asset/berau-logo.svg">
+            <img src="asset/berau-logo.svg"> ** Replace with company logo.
         </div>
         <div class="header__ministry">
-            <img src="asset/esdm-logo.svg">
+            <img src="asset/esdm-logo.svg"> ** Replace with ministry logo.
         </div>
     </div>
     <div class="badge__body">
-        <h3 class="lc__title">Kartu Pengawas Operasional Land Clearing</h3>
-        <img class="lc__picture" src="http://www.saparch.com/public/widget/1_widget_john-doe.png">
-        <p class="lc__name">Nama Petugas</p>
+        <h3 class="lc__title">Kartu Pengawas Operasional Land Clearing</h3> ** Replace with ministry functions.
+        <img class="lc__picture" src="http://www.saparch.com/public/widget/1_widget_john-doe.png"> ** Replace with user picture.
+        <p class="lc__name">Nama Petugas</p> ** Replace with user name.
     </div>
     <div class="badge__footer">
         <table class="remarks">
@@ -90,26 +90,83 @@ This repository is used to keep the Berau Coal's ID card preview. There are seve
             <tr>
                 <td>No Reg</td>
                 <td>:</td>
-                <td>{{No Reg}}</td>
+                <td>{{No Reg}}</td> ** Replace with registry number.
             </tr>
             <tr>
                 <td>NPK</td>
                 <td>:</td>
-                <td>{{NPK}}</td>
+                <td>{{NPK}}</td> ** Replace with NPK.
             </tr>
             <tr>
                 <td>Perusahaan</td>
                 <td>:</td>
-                <td>{{Perusahaan}}</td>
+                <td>{{Perusahaan}}</td> ** Replace with company name.
             </tr>
             <tr>
                 <td>Masa Berlaku</td>
                 <td>:</td>
-                <td>{{Masa Berlaku}}</td>
+                <td>{{Masa Berlaku}}</td> ** Replace with valid period.
             </tr>
             </tbody>
         </table>
         <p class="website">www.beraucoal.co.id</p>
+    </div>
+</div>
+```
+## Dumping Operator Card
+### Code
+```html
+<div class="badge badge--dm">
+    <div class="badge__header">
+        <div class="header__company">
+            <img src="asset/berau-logo.svg"> ** Replace with company logo.
+        </div>
+        <div class="header__ministry">
+            <img src="asset/esdm-logo.svg"> ** Replace with ministry logo.
+        </div>
+    </div>
+    <div class="badge__body">
+        <h3 class="dm__title">Kartu Petugas<br>Dumping</h3> ** Replace with ministry function.
+        <img class="dm__picture" src="http://www.saparch.com/public/widget/1_widget_john-doe.png"> ** Replace with user picture.
+    </div>
+    <div class="badge__footer">
+        <table class="remarks">
+            <tbody>
+            <tr>
+                <td>No Reg</td>
+                <td>:</td>
+                <td>{{No Reg}}</td> ** Replace with registry number.
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>{{Nama}}</td> ** Replace with user name.
+            </tr>
+            <tr>
+                <td>NPK</td>
+                <td>:</td>
+                <td>{{NPK}}</td> ** Replace with NPK.
+            </tr>
+            <tr>
+                <td>Perusahaan</td>
+                <td>:</td>
+                <td>{{Perusahaan}}</td> ** Replace with company.
+            </tr>
+            <tr>
+                <td>Masa Berlaku</td>
+                <td>:</td>
+                <td>{{Masa Berlaku}}</td> ** Replace with validity period.
+            </tr>
+            </tbody>
+        </table>
+        <p class="penalty-title">Pelanggaran</p>
+        <table class="penalty">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
     </div>
 </div>
 ```

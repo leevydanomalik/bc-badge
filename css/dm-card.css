@@ -1,0 +1,140 @@
+:root {
+    --dm-card-header-height: calc(.2 * var(--badge-height));
+    --dm-card-footer-height: calc(.4 * var(--badge-height));
+    --dm-card-body-height: calc(.4 * var(--badge-height));
+}
+
+/*Header Part*/
+.badge--dm > .badge__header {
+    position: relative;
+    height: var(--dm-card-header-height);
+    border-top-left-radius: var(--badge-border-radius);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+/*Company Logo*/
+.badge--dm .header__company {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--berau-black);
+    border-top-left-radius: var(--badge-border-radius);
+}
+
+.badge--dm .header__company > img {
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    padding: 12.5% 0;
+}
+
+.badge--dm .header__ministry {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--berau-green);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+.badge--dm .header__ministry > img {
+    height: 80%;
+    width: auto;
+    padding: 7.5% 0;
+}
+
+/*Body Part*/
+.badge--dm > .badge__body {
+    position: relative;
+    height: var(--dm-card-body-height);
+    background-color: #FAFAFA;
+}
+
+.badge--dm .dm__title {
+    position: absolute;
+    top: var(--badge-padding);
+    margin: 0;
+    width: 100%;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.badge--dm .dm__name {
+    position: absolute;
+    bottom: var(--badge-padding);
+    margin: 0;
+    width: 100%;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.badge--dm .dm__picture {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -70%);
+    -moz-transform: translate(-50%, -70%);
+    -ms-transform: translate(-50%, -70%);
+    -o-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+    height: calc(.5 * var(--dm-card-body-height));
+    width: calc(.375 * var(--dm-card-body-height));
+    object-fit: cover;
+}
+
+/*Footer Part*/
+.badge--dm > .badge__footer {
+    position: relative;
+    height: calc(var(--dm-card-footer-height) - (4 * var(--badge-padding)));
+    padding: calc(2 * var(--badge-padding));
+    background-color: var(--berau-black);
+    border-bottom-left-radius: var(--badge-border-radius);
+    border-bottom-right-radius: var(--badge-border-radius);
+}
+
+.badge--dm .remarks {
+    margin: 0;
+    border-spacing: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.badge--dm .penalty-title {
+    width: 100%;
+    margin: var(--badge-padding) 0;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.badge--dm .penalty {
+    width: 100%;
+    margin: 0;
+    border-spacing: 0;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.badge--dm .penalty td {
+    border: 1px solid var(--berau-green);
+}
+
+.badge--dm .website {
+    position: absolute;
+    right: var(--badge-padding);
+    bottom: var(--badge-padding);
+    margin: 0;
+    font-size: 12px;
+    color: var(--berau-green);
+}
