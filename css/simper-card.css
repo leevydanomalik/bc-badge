@@ -66,6 +66,7 @@
 
 .badge--simper .type__subtitle.type__subtitle--contractor {
     background-color: var(--berau-yellow);
+    color: black;
 }
 
 .badge--simper .type__subtitle > p {
