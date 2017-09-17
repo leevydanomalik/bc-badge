@@ -1,10 +1,10 @@
-@import url("id-card.css");
-@import url("guest-card.css");
-@import url("lc-card.css");
-@import url("dm-card.css");
-@import url("simper-card.css");
-@import url("kimper-card.css");
-@import url("tac-card.css");
+@import url("card-id.css");
+@import url("card-guest.css");
+@import url("card-lc.css");
+@import url("card-dm.css");
+@import url("card-simper.css");
+@import url("card-kimper.css");
+@import url("card-tac.css");
 
 @font-face {
     font-family: franklin-gothic;
