@@ -1,4 +1,5 @@
 @import url("id-card.css");
+@import url("guest-card.css");
 
 @font-face {
     font-family: franklin-gothic;
@@ -13,11 +14,18 @@
     --berau-black: black;
     --berau-green: #8BC34A;
     --berau-blue: #2196F3;
+    --berau-red: #F44336;
+    --berau-yellow: #FFEB3B;
+    --berau-orange: #FF9800;
 }
 
 body {
     background-color: #FAFAFA;
     font-family: "Helvetica", "Arial", sans-serif;
+}
+
+body > * {
+    margin: 8px;
 }
 
 .badge {
@@ -30,4 +38,8 @@ body {
     -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
     -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+}
+
+.hidden {
+    display: none !important;
 }

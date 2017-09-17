@@ -1,0 +1,129 @@
+:root {
+    --id-card-header-height: calc(.2 * var(--badge-height));
+    --id-card-footer-height: calc(.25 * var(--badge-height));
+    --id-card-body-height: calc(.55 * var(--badge-height));
+}
+
+/*Header Part*/
+.badge--guest > .badge__header {
+    position: relative;
+    height: var(--id-card-header-height);
+    border-top-left-radius: var(--badge-border-radius);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+/*Company Logo*/
+.badge--guest .header__company {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--berau-black);
+    border-top-left-radius: var(--badge-border-radius);
+}
+
+.badge--guest .header__company > img {
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    padding: 12.5% 0;
+}
+
+/*Card Type*/
+.badge--guest .header__type {
+    display: inline-block;
+    width: 40%;
+}
+
+.badge--guest .type__title {
+    background-color: var(--berau-green);
+    border-top-right-radius: var(--badge-border-radius);
+    height: var(--id-card-header-height);
+}
+
+.badge--guest .type__title > p {
+    width: 100%;
+    height: var(--id-card-header-height);
+    line-height: var(--id-card-header-height);
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+/*Body Part*/
+.badge--guest > .badge__body {
+    position: relative;
+    height: var(--id-card-body-height);
+    background-color: #FAFAFA;
+}
+
+.badge--guest .guest__company {
+    display: block;
+    position: absolute;
+    top: 32px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 18px;
+}
+
+.badge--guest .guest__number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-weight: 700;
+    font-size: 128px;
+    -webkit-text-stroke: 0.01rem black;
+}
+
+.badge--guest .guest__number.guest__number--tempworker {
+    color: black;
+}
+
+.badge--guest .guest__number.guest__number--visitor {
+    color: var(--berau-orange);
+}
+
+/*Footer Part*/
+.badge--guest > .badge__footer {
+    position: relative;
+    height: calc(var(--id-card-footer-height) - (4 * var(--badge-padding)));
+    padding: calc(2 * var(--badge-padding)) 0;
+    background-color: var(--berau-black);
+    border-bottom-left-radius: var(--badge-border-radius);
+    border-bottom-right-radius: var(--badge-border-radius);
+}
+
+.badge--guest .label {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', franklin-gothic, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.badge--guest .website {
+    position: absolute;
+    right: var(--badge-padding);
+    bottom: var(--badge-padding);
+    margin: 0;
+    font-size: 12px;
+    color: var(--berau-green);
+}
