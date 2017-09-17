@@ -1,0 +1,117 @@
+:root {
+    --lc-card-header-height: calc(.2 * var(--badge-height));
+    --lc-card-footer-height: calc(.25 * var(--badge-height));
+    --lc-card-body-height: calc(.55 * var(--badge-height));
+}
+
+/*Header Part*/
+.badge--lc > .badge__header {
+    position: relative;
+    height: var(--lc-card-header-height);
+    border-top-left-radius: var(--badge-border-radius);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+/*Company Logo*/
+.badge--lc .header__company {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--berau-black);
+    border-top-left-radius: var(--badge-border-radius);
+}
+
+.badge--lc .header__company > img {
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    padding: 12.5% 0;
+}
+
+.badge--lc .header__ministry {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--berau-green);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+.badge--lc .header__ministry > img {
+    height: 80%;
+    width: auto;
+    padding: 7.5% 0;
+}
+
+/*Body Part*/
+.badge--lc > .badge__body {
+    position: relative;
+    height: var(--lc-card-body-height);
+    background-color: #FAFAFA;
+}
+
+.badge--lc .lc__title {
+    position: absolute;
+    top: var(--badge-padding);
+    margin: 0;
+    width: 100%;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.badge--lc .lc__name {
+    position: absolute;
+    bottom: var(--badge-padding);
+    margin: 0;
+    width: 100%;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.badge--lc .lc__picture {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -60%);
+    -moz-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
+    -o-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+    height: calc(.5 * var(--lc-card-body-height));
+    width: calc(.375 * var(--lc-card-body-height));
+    object-fit: cover;
+}
+
+/*Footer Part*/
+.badge--lc > .badge__footer {
+    position: relative;
+    height: calc(var(--lc-card-footer-height) - (4 * var(--badge-padding)));
+    padding: calc(2 * var(--badge-padding));
+    background-color: var(--berau-black);
+    border-bottom-left-radius: var(--badge-border-radius);
+    border-bottom-right-radius: var(--badge-border-radius);
+}
+
+.badge--lc .remarks {
+    margin: 0;
+    border-spacing: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.badge--lc .website {
+    position: absolute;
+    right: var(--badge-padding);
+    bottom: var(--badge-padding);
+    margin: 0;
+    font-size: 12px;
+    color: var(--berau-green);
+}
