@@ -66,7 +66,6 @@
 
 .badge--simper .type__subtitle.type__subtitle--contractor {
     background-color: var(--berau-yellow);
-    color: black;
 }
 
 .badge--simper .type__subtitle > p {
@@ -81,6 +80,10 @@
     color: white;
 }
 
+.badge--simper .type__subtitle.type__subtitle--contractor > p {
+    color: black !important;
+}
+
 /*Body Part*/
 .badge--simper > .badge__body {
     position: relative;
@@ -90,7 +93,7 @@
 
 .badge--simper .simper__general {
     margin: 0;
-    padding: var(--badge-padding);
+    padding: var(--badge-padding) calc(2* var(--badge-padding));
     border-spacing: 0;
     font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
     font-size: 16px;

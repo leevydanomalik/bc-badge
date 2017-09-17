@@ -1,0 +1,127 @@
+:root {
+    --kimper-card-header-height: calc(.2 * var(--badge-height));
+    --kimper-card-footer-height: calc(.25 * var(--badge-height));
+    --kimper-card-body-height: calc(.55 * var(--badge-height));
+}
+
+/*Header Part*/
+.badge--kimper > .badge__header {
+    position: relative;
+    height: var(--kimper-card-header-height);
+    border-top-left-radius: var(--badge-border-radius);
+    border-top-right-radius: var(--badge-border-radius);
+}
+
+/*Company Logo*/
+.badge--kimper .header__company {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--berau-black);
+    border-top-left-radius: var(--badge-border-radius);
+}
+
+.badge--kimper .header__company > img {
+    width: 80%;
+    height: auto;
+    max-height: 80%;
+    padding: 12.5% 0;
+}
+
+/*Card Type*/
+.badge--kimper .header__type {
+    display: inline-block;
+    width: 40%;
+}
+
+.badge--kimper .type__title {
+    background-color: var(--berau-red);
+    border-top-right-radius: var(--badge-border-radius);
+    height: var(--id-card-header-height);
+}
+
+.badge--kimper .type__title > p {
+    width: 100%;
+    height: var(--id-card-header-height);
+    line-height: var(--id-card-header-height);
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+/*Body Part*/
+.badge--kimper > .badge__body {
+    position: relative;
+    height: var(--kimper-card-body-height);
+    background-color: #FAFAFA;
+}
+
+.badge--kimper .kimper__picture {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -20%);
+    -moz-transform: translate(-50%, -20%);
+    -ms-transform: translate(-50%, -20%);
+    -o-transform: translate(-50%, -20%);
+    transform: translate(-50%, -20%);
+    height: calc(.6 * var(--lc-card-body-height));
+    width: calc(.45 * var(--lc-card-body-height));
+    object-fit: cover;
+}
+
+.badge--kimper .kimper__general {
+    position: absolute;
+    left: calc(2 * var(--badge-padding));
+    bottom: calc(2 * var(--badge-padding));
+    border-spacing: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+/*Footer Part*/
+.badge--kimper > .badge__footer {
+    position: relative;
+    height: var(--kimper-card-footer-height);
+    background-color: var(--berau-red);
+    border-bottom-left-radius: var(--badge-border-radius);
+    border-bottom-right-radius: var(--badge-border-radius);
+}
+
+.badge--kimper .kimper__permit {
+    padding: var(--badge-padding);
+    text-align: center;
+}
+
+.badge--kimper .kimper__permit--employee {
+    background: var(--berau-green);
+}
+
+.badge--kimper .kimper__permit > p {
+    margin: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+}
+
+.badge--kimper .kimper__matrix-1 {
+    padding: calc(2 * var(--badge-padding));
+    border-spacing: 0;
+    font-family: "Franklin Gothic Medium", franklin-gothic, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.badge--kimper .website {
+    position: absolute;
+    right: var(--badge-padding);
+    bottom: var(--badge-padding);
+    margin: 0;
+    font-size: 12px;
+    color: var(--berau-green);
+}

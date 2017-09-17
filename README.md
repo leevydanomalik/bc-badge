@@ -258,3 +258,56 @@ This repository is used to keep the Berau Coal's ID card preview. There are seve
     </div>
 </div>
 ```
+## Kimper
+### Code
+```html
+<div class="badge badge--kimper">
+    <div class="badge__header">
+        <div class="header__company">
+            <img src="asset/berau-logo.svg">
+        </div>
+        <div class="header__type">
+            <div class="type__title">
+                <p>KIMPER</p>
+            </div>
+        </div>
+    </div>
+    <div class="badge__body">
+        <img class="kimper__picture" src="http://www.saparch.com/public/widget/1_widget_john-doe.png">
+        ** Replace with user picture.
+        <table class="kimper__general">
+            <tbody>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>{{Nama}}</td> ** Replace with user name.
+            </tr>
+            <tr>
+                <td>Jabatan</td>
+                <td>:</td>
+                <td>{{Jabatan}}</td> ** Replace with user job position.
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="badge__footer">
+        <div class="kimper__permit kimper__permit--employee">
+            <p>Perusahaan</p> ** Replace with company name
+        </div>
+        <table class="kimper__matrix-1">
+            <tbody>
+            <tr>
+                <td>No Reg</td>
+                <td>:</td>
+                <td>{{No Reg}}</td> ** Replace with registry number.
+            </tr>
+            <tr>
+                <td>Valid</td>
+                <td>:</td>
+                <td>{{Valid}}</td> ** Replace with validity period.
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+```

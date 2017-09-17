@@ -6,6 +6,57 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <!--Kimper Card-->
+    <div class="badge badge--kimper">
+        <div class="badge__header">
+            <div class="header__company">
+                <img src="asset/berau-logo.svg">
+            </div>
+            <div class="header__type">
+                <div class="type__title">
+                    <p>KIMPER</p>
+                </div>
+            </div>
+        </div>
+        <div class="badge__body">
+            <img class="kimper__picture" src="http://www.saparch.com/public/widget/1_widget_john-doe.png">
+            <table class="kimper__general">
+                <tbody>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>{{Nama}}</td>
+                </tr>
+                <tr>
+                    <td>Jabatan</td>
+                    <td>:</td>
+                    <td>{{Jabatan}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="badge__footer">
+            <div class="kimper__permit kimper__permit--employee">
+                <p>Perusahaan</p>
+            </div>
+            <table class="kimper__matrix-1">
+                <tbody>
+                <tr>
+                    <td>No Reg</td>
+                    <td>:</td>
+                    <td>{{No Reg}}</td>
+                </tr>
+                <tr>
+                    <td>Valid</td>
+                    <td>:</td>
+                    <td>{{Valid}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     <!--Simper Card-->
     <div class="badge badge--simper">
         <div class="badge__header">
@@ -46,7 +97,6 @@
                 </tr>
                 </tbody>
             </table>
-
         </div>
         <div class="badge__footer">
             <div class="simper__permit simper__permit--contractor">
